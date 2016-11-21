@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #f4f4f4; }
+
+.clear-line {
+  max-width: 979px;
+  margin: 30px auto;
+  border-top: 1px solid #ccc; }
+
+.main-title {
+  text-align: center; }
+  .main-title h1 {
+    font-size: 2.5em; }
+
+.item-info {
+  text-align: center;
+  padding-top: 20px; }
+  .item-info .gallery-container {
+    display: inline-block; }
+    .item-info .gallery-container img {
+      max-width: 400px; }
+  .item-info .form-container {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 30px; }
+    .item-info .form-container .price-container {
+      margin-bottom: 20px; }
+    .item-info .form-container .item-price {
+      font-size: 36px; }
+      .item-info .form-container .item-price sup {
+        font-size: 0.5em;
+        line-height: 2.5em; }
+    .item-info .form-container .product-form .select {
+      margin-bottom: 10px; }
+    .item-info .form-container .product-form label {
+      width: 80px; }
+    .item-info .form-container .product-form .button {
+      margin-top: 20px;
+      margin-bottom: 10px; }
+    .item-info .form-container .more-items {
+      margin-top: 35px;
+      max-width: 400px; }
+
+.main-tabs {
+  position: relative;
+  max-width: 979px;
+  min-height: 200px;
+  clear: both;
+  margin: 65px auto 25px;
+  background: white; }
+  .main-tabs .tab-desc label {
+    width: 150px;
+    margin-right: 10px; }
+  .main-tabs .tab {
+    float: left; }
+    .main-tabs .tab label {
+      background: #ddd;
+      padding: 5px 10px;
+      border: 1px solid #bbb;
+      border-bottom: none;
+      margin-left: -1px;
+      position: relative;
+      left: 30px;
+      top: -31px; }
+    .main-tabs .tab .content {
+      position: absolute;
+      top: -1px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 15px;
+      border: 1px solid #bbb;
+      z-index: 1;
+      opacity: 0; }
+      .main-tabs .tab .content .questions p {
+        color: #3a87ad; }
+      .main-tabs .tab .content .answers p {
+        color: #468847; }
+  .main-tabs .tab [type=radio] {
+    display: none; }
+  .main-tabs [type=radio]:checked ~ label {
+    background: white;
+    z-index: 2; }
+  .main-tabs [type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+    opacity: 1; }
+
+/*# sourceMappingURL=styles.css.map */
